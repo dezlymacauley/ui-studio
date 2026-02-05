@@ -243,10 +243,41 @@ truncate -s 0 src/lib/index.ts
 ```
 _______________________________________________________________________________
 
+Clear the contents of `src/routes/+layout.svelte`
+```sh
+truncate -s 0 src/routes/+layout.svelte
+```
+
+Replace the contents with this:
+```svelte
+<script lang="ts">
+  let { children } = $props();
+</script>
+
+{@render children()}
+```
+_______________________________________________________________________________
+
+Rename `src/lib/assets/favicon.svg` to:
+
+`src/lib/assets/svelte_logo.svg`
+_______________________________________________________________________________
+
 Clear the contents of the home page
 ```sh
 truncate -s 0 src/routes/+page.svelte
 ```
+
+Replace the contents of the page with this:
+```svelte
+<script lang="ts">
+  import favicon from "$lib/assets/svelte_logo.svg";
+</script>
+
+<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+```
+
+I want to have full control over the `+page.svelte` of each route. 
 _______________________________________________________________________________
 
 Delete `src/routes/layout.css`
