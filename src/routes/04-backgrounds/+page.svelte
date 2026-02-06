@@ -7,28 +7,24 @@
 
 <style>
   /* 
-    This is how you use rules (such as Tailwind classes) 
-    from a `.css` file inside inside a Svelte style block.
-    Technically this line is not needed here because I imported 
-    the css file in the script tag.
-
-    Normally that `import` line would not be in a `+page.svelte`,
-    and would be in a `+layout.svelte`. 
-
-    In that situation, the `@reference` line below below would be required
-    to use `@apply` inside a Svelte style block.
+    `@reference` is :required to use the rules of a .css file,
+    inside a Svelte style block.
+  
+    Without this line you will get an error if you try to use
+    `@apply`
   */
   @reference "./page.css";
 
-
   .info-text {
+    /* 
+      `@pply` is used to show that you are setting style rules that 
+      are Tailwind classes and not regular CSS.
+    */
     @apply bg-purple-800 text-white;
   }
 
   .outdoor-couple-container1 {
     /*  
-      `@pply` is used to show that the style rules here are Tailwind classes
-      and not regular css.
     */
 
     /*
