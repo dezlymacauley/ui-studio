@@ -1,15 +1,15 @@
-# UI Design Setup
+# UI Studio Setup
 _______________________________________________________________________________
 
-Create the directory
+Create a directory for the studio
 ```sh
-mkdir ui-design
+mkdir ui-studio
 ```
 _______________________________________________________________________________
 
 Enter the directory
 ```sh
-cd ui-design
+cd ui-studio
 ```
 
 For the rest of this guide, 
@@ -260,7 +260,7 @@ _______________________________________________________________________________
 
 Rename `src/lib/assets/favicon.svg` to:
 
-`src/lib/assets/svelte_logo.svg`
+`src/lib/svg/svelte_logo.svg`
 _______________________________________________________________________________
 
 Clear the contents of the home page
