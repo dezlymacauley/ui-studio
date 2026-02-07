@@ -237,9 +237,9 @@ rm -rf .vscode
 ```
 _______________________________________________________________________________
 
-Clear the contents of `src/lib/index.ts`
+Delete `src/lib/index.ts`
 ```sh
-truncate -s 0 src/lib/index.ts
+rm src/lib/index.ts
 ```
 _______________________________________________________________________________
 
